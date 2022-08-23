@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Uniload</string>
+    <string name="enter_url">Enter URL</string>
+
+    <string name="rapidapi_key_one">YOUR_API_KEY</string>
+    <string name="rapidapi_key_two">YOUR_API_KEY</string>
+</resources>

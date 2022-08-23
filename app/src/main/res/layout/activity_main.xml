@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.dlyt.yanndroid.oneui.layout.ToolbarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:expandable="false"
+    app:expanded="false"
+    app:navigationIcon="@drawable/ic_oui4_help"
+    app:subtitle="MultiTool Downloader"
+    app:title="@string/app_name"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/root_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/welcome_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="68dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/url_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/enter_url"
+                android:imeOptions="actionDone"
+                android:inputType="textUri"
+                android:padding="8dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Download Settings"
+                android:textColor="@color/primary_color"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+                <EditText
+                    android:id="@+id/prefix_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="start|center"
+                    android:hint="File Name Prefix"
+                    android:imeOptions="actionNext"
+                    android:inputType="textUri"
+                    android:padding="8dp" />
+
+                <EditText
+                    android:id="@+id/sufix_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="start|center"
+                    android:hint="File Name Sufix"
+                    android:imeOptions="actionDone"
+                    android:inputType="textUri"
+                    android:padding="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/download_button"
+                style="@style/ButtonStyle.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Download"
+                app:icon="@drawable/ic_oui_download"
+                app:iconTint="#FFF" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/api_info_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Available: 75/100\nResets At: 26/07/2022"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/settings_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Settings"
+                app:icon="@drawable/ic_oui4_settings_2"
+                app:iconTint="#FFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/processing_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="68dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <de.dlyt.yanndroid.oneui.widget.ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Wait..." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/final_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.dlyt.yanndroid.oneui.view.RecyclerView
+                    android:id="@+id/images_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/final_buttons_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center"
+                    android:animateLayoutChanges="true"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/ButtonStyle.Colored"
+                        android:id="@+id/download_all_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="Download All" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/back_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="Back" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</de.dlyt.yanndroid.oneui.layout.ToolbarLayout>
