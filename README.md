@@ -16,4 +16,8 @@ The application uses the following libraries:
 - [Glide | Bumptech](https://github.com/bumptech/glide) (Image Framework)
 
 
-<img src="https://i.ibb.co/PD52hGP/Screenshot-20220823-154112-Uniload.png" width="216" height="468" alt="Screenshot-20220823-154112-Uniload"><img src="https://i.ibb.co/HK1MtXn/Screenshot-20220823-155339-Uniload.png" width="216" height="468" alt="Screenshot-20220823-155339-Uniload" border="0"><img src="https://i.ibb.co/FB9Kxsr/Screenshot-20220823-155351-Uniload.png" width="216" height="468" alt="Screenshot-20220823-155351-Uniload" border="0"><img src="https://i.ibb.co/bdjmcNY/Screenshot-20220823-155357-Uniload.png" width="216" height="468" alt="Screenshot-20220823-155357-Uniload" border="0">
+<p align="center">
+<img src="https://i.ibb.co/PD52hGP/Screenshot-20220823-154112-Uniload.png" height="468" alt="Screenshot-20220823-154112-Uniload">
+<img src="https://i.ibb.co/HK1MtXn/Screenshot-20220823-155339-Uniload.png" height="468" alt="Screenshot-20220823-155339-Uniload" border="0">
+<img src="https://i.ibb.co/FB9Kxsr/Screenshot-20220823-155351-Uniload.png" height="468" alt="Screenshot-20220823-155351-Uniload" border="0">
+<img src="https://i.ibb.co/bdjmcNY/Screenshot-20220823-155357-Uniload.png" height="468" alt="Screenshot-20220823-155357-Uniload" border="0"></p>
