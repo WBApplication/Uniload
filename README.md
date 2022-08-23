@@ -9,6 +9,8 @@ Universal tool for downloading media from various social networks based on an AP
 
 Currently, the app only works with Instagram content.
 
+In order for the application to work, <a href="https://rapidapi.com/arraybobo/api/instagram-media-downloader/">you must provide the API key</a> in strings.xml
+
 The application uses the following libraries:
 
 - [OneUI | Yanndroid](https://github.com/OneUIProject/OneUI-Design-Library) (UI)
