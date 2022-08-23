@@ -1,12 +1,11 @@
 <div align="center">
 <h1>Uniload</h1>
 
-**This App is Part of <a href="https://github.com/WBApplication/WalkBoner">WalkBoner</a> App**
+**This App will be a Part of <a href="https://github.com/WBApplication/WalkBoner">WalkBoner</a> App**
 </div>
 
 
-This application is a universal tool for downloading media from various social networks.<br>
-The application is based on an API's from RapidAPI.
+Universal tool for downloading media from various social networks based on an API's from RapidAPI.
 
 Currently, the app only works with Instagram content.
 
